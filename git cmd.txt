@@ -1,0 +1,221 @@
+
+C:\Users\SUITE>D:
+
+D:\>cd D:\app-web-operaciones-2
+
+D:\app-web-operaciones-2>git clone https://github.com/Zagaceta123/app-web-operaciones-2.git
+Cloning into 'app-web-operaciones-2'...
+remote: Enumerating objects: 37, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 37 (delta 1), reused 37 (delta 1), pack-reused 0
+Receiving objects: 100% (37/37), 64.06 KiB | 354.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+D:\app-web-operaciones-2>
+D:\app-web-operaciones-2>git clone https://github.com/Chokolove/ServiciosWeb.git
+Cloning into 'ServiciosWeb'...
+remote: Enumerating objects: 1669, done.
+remote: Total 1669 (delta 0), reused 0 (delta 0), pack-reused 1669Receiving objects:  99% (1653/1669), 44.26 MiB | 9.12
+Receiving objects: 100% (1669/1669), 44.68 MiB | 8.47 MiB/s, done.
+Resolving deltas: 100% (756/756), done.
+Updating files: 100% (905/905), done.
+
+D:\app-web-operaciones-2>git branch
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\app-web-operaciones-2>cd app-web-operaciones-2
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git branch
+* master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout -b dev-requerimientos
+Switched to a new branch 'dev-requerimientos'
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git branch
+* dev-requerimientos
+  master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git status
+On branch dev-requerimientos
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/main/resources/static/script/bootstrap/bootstrap.bundle.js
+        new file:   src/main/resources/static/style/bootstrap/bootstrap.css
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/pe/edu/cibertec/appweboperaciones2/controller/HomeController.java
+        modified:   src/main/resources/templates/home.html
+
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git add .
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git status
+On branch dev-requerimientos
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/main/java/pe/edu/cibertec/appweboperaciones2/controller/HomeController.java
+        new file:   src/main/resources/static/script/bootstrap/bootstrap.bundle.js
+        new file:   src/main/resources/static/style/bootstrap/bootstrap.css
+        modified:   src/main/resources/templates/home.html
+
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git commit -m "actualizacion"
+[dev-requerimientos 51ae59f] actualizacion
+ 4 files changed, 17979 insertions(+), 3 deletions(-)
+ create mode 100644 src/main/resources/static/script/bootstrap/bootstrap.bundle.js
+ create mode 100644 src/main/resources/static/style/bootstrap/bootstrap.css
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git status
+On branch dev-requerimientos
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/resources/templates/home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git add .
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git status
+On branch dev-requerimientos
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/main/resources/templates/home.html
+
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git commit -m "bootstarp agregado"
+[dev-requerimientos aee29db] bootstarp agregado
+ 1 file changed, 16 insertions(+), 25 deletions(-)
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git log
+commit aee29dbb8ee9df89c0c07fec35a4aea320e7564a (HEAD -> dev-requerimientos)
+Author: Zagaceta123 <rz_sebas@hotmail.com>
+Date:   Sun Sep 10 16:08:44 2023 -0500
+
+    bootstarp agregado
+
+commit 51ae59f8133396b5c6f88e3f7b567d2cd0e789cf
+Author: Zagaceta123 <rz_sebas@hotmail.com>
+Date:   Sun Sep 10 15:59:55 2023 -0500
+
+    actualizacion
+
+commit 26fa89543ae0014158af8e5f0198dc5fd8c2990b (origin/master, origin/HEAD, master)
+Author: Zagaceta123 <rz_sebas@hotmail.com>
+Date:   Sun Sep 10 15:10:42 2023 -0500
+
+    nueva actualizacion
+
+commit 24fb7f809fa13a62e65b5b1ac3a5d88f21108395
+Author: Zagaceta123 <rz_sebas@hotmail.com>
+Date:   Sun Sep 10 14:19:56 2023 -0500
+
+    inicio trabajo
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git push
+fatal: The current branch dev-requerimientos has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev-requerimientos
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git branch
+* dev-requerimientos
+  master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git status
+On branch dev-requerimientos
+nothing to commit, working tree clean
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git branch
+  dev-requerimientos
+* master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git push
+Everything up-to-date
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout requerimiento
+error: pathspec 'requerimiento' did not match any file(s) known to git
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout requerimientos
+error: pathspec 'requerimientos' did not match any file(s) known to git
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout dev-requerimientos
+Switched to branch 'dev-requerimientos'
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git branch
+* dev-requerimientos
+  master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        src/main/resources/templates/home.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git add .
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git status
+On branch dev-requerimientos
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/main/resources/templates/home.html
+
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkouut master
+git: 'checkouut' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        src/main/resources/templates/home.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git commit -m "actualizacion home"
+[dev-requerimientos 959a098] actualizacion home
+ 1 file changed, 2 insertions(+)
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git branch
+* dev-requerimientos
+  master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git merge dev-requerimientos
+Updating 26fa895..959a098
+Fast-forward
+ .../controller/HomeController.java                 |     4 +-
+ .../static/script/bootstrap/bootstrap.bundle.js    |  7075 ++++++++++++
+ .../resources/static/style/bootstrap/bootstrap.css | 10878 +++++++++++++++++++
+ src/main/resources/templates/home.html             |    18 +-
+ 4 files changed, 17972 insertions(+), 3 deletions(-)
+ create mode 100644 src/main/resources/static/script/bootstrap/bootstrap.bundle.js
+ create mode 100644 src/main/resources/static/style/bootstrap/bootstrap.css
+
+D:\app-web-operaciones-2\app-web-operaciones-2>git push origin master
+Enumerating objects: 48, done.
+Counting objects: 100% (48/48), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (35/35), 75.26 KiB | 5.02 MiB/s, done.
+Total 35 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 3 local objects.
+To https://github.com/Zagaceta123/app-web-operaciones-2.git
+   26fa895..959a098  master -> master
+
+D:\app-web-operaciones-2\app-web-operaciones-2>
